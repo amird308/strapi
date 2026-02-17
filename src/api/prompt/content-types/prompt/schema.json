@@ -32,14 +32,6 @@
       },
       "required": true
     },
-    "categoryId": {
-      "type": "uid",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
     "cover": {
       "type": "media",
       "pluginOptions": {
@@ -53,6 +45,14 @@
         "images",
         "files"
       ]
+    },
+    "categoryId": {
+      "type": "string",
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
     }
   }
 }

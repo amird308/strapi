@@ -389,10 +389,10 @@ export interface ApiPromptPrompt extends Struct.CollectionTypeSchema {
     };
   };
   attributes: {
-    categoryId: Schema.Attribute.UID &
+    categoryId: Schema.Attribute.String &
       Schema.Attribute.SetPluginOptions<{
         i18n: {
-          localized: true;
+          localized: false;
         };
       }>;
     cover: Schema.Attribute.Media<'images' | 'files'> &
